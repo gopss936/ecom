@@ -5,7 +5,7 @@ const routes= require('./routes/index');
 require('dotenv').config();
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/ecommerce',{
+mongoose.connect('mongodb+srv://kvrgopinath:7SboErLt4yblwxnY@rebu.gswuyl2.mongodb.net/ecommerce',{
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
