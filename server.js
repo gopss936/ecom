@@ -14,7 +14,9 @@ mongoose.connect('mongodb://localhost:27017/ecommerce',{
 app.use(express.json());
 app.use(morgan('dev'));
 app.use('/api',routes);
-
+app.get('/ecom', (req, res) => {
+  res.send('Welcome to Ecom!');
+});
 app.use(express.urlencoded({extended: true}));
 const PORT=process.env.PORT || 5001;
 app.listen(PORT,()=>{
